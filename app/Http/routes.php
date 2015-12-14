@@ -5,4 +5,6 @@ $router->controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-$router->resource('/', 'HomeController');
+resource('tweets', 'TweetController');
+
+resource('/', 'HomeController');

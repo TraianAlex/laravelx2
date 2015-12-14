@@ -111,7 +111,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 390.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -123,7 +123,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 668.0
+		"width": 640.0
 	},
 	"console":
 	{
@@ -140,7 +140,36 @@
 	},
 	"file_history":
 	[
+		"/D/Dropbox/www/laravel/laravelx2/app/Http/Controllers/TweetController.php",
+		"/D/Dropbox/www/laravel/laravelx2/app/Tweet.php",
+		"/D/Dropbox/www/laravel/laravelx2/app/Tag.php",
+		"/D/Dropbox/www/laravel/laravelx2/app/User.php",
+		"/D/Dropbox/www/laravel/laravelx2/resources/views/tweets/index.blade.php",
+		"/D/Dropbox/www/laravel/laravelx2/resources/views/tweets/edit.blade.php",
+		"/D/Dropbox/www/laravel/laravelx2/resources/views/tweets/show.blade.php",
+		"/D/Dropbox/www/laravel/laravelx2/resources/views/tweets/create.blade.php",
+		"/D/Dropbox/www/laravel/laravelx2/database/migrations/2015_12_14_000429_alter_tags_table.php",
+		"/D/Dropbox/www/laravel/laravelx2/database/migrations/2015_12_13_181311_create_tags_table.php",
+		"/D/Dropbox/www/laravel/laravelx2/resources/views/home.blade.php",
+		"/D/Dropbox/www/laravel/laravelx2/database/migrations/2015_12_13_170308_add_image_field_to_tweets_table.php",
+		"/D/Dropbox/www/laravel/laravelx2/app/Http/Controllers/HomeController.php",
+		"/D/Dropbox/www/laravel/laravelx2/resources/views/partials/header.blade.php",
+		"/D/Dropbox/www/laravel/laravelx2/resources/views/layout.blade.php",
+		"/D/Dropbox/www/laravel/laravelx2/resources/views/layouts/main.blade.php",
+		"/D/Dropbox/www/laravel/laravelx2/resources/views/layouts/navigation.blade.php",
+		"/D/Dropbox/www/laravel/laravelx2/database/seeds/DatabaseSeeder.php",
+		"/D/Dropbox/www/laravel/laravelx2/database/seeds/UserTableSeeder.php",
+		"/D/Dropbox/www/laravel/laravelx2/.env",
+		"/D/Dropbox/www/laravel/laravelx2/database/factories/ModelFactory.php",
+		"/D/Dropbox/www/laravel/laravelx2/database/seeds/TweetTableSeeder.php",
+		"/D/Dropbox/www/laravel/laravelx2/tests/TweetTest.php",
 		"/C/Users/victor92/OneDrive/whtml/curs/kitcss.css",
+		"/D/Dropbox/www/laravel/laravelx2/resources/views/errors/messages.blade.php",
+		"/D/Dropbox/www/laravel/laravelx2/app/Http/routes.php",
+		"/D/Dropbox/www/laravel/laravelx2/app/Providers/AppServiceProvider.php",
+		"/D/Dropbox/www/laravel/laravelx2/composer.json",
+		"/D/Dropbox/www/laravel/laravelx2/.gitignore",
+		"/D/Dropbox/www/laravel/laravelx2/config/database.php",
 		"/C/Users/victor92/OneDrive/whtml/curs/zengarden-sample.css",
 		"/D/classlete/PhpFox Community Edition v3.2.0 RC1 PHP NULL & Phpfox Ultimate guide {{KANNA}}/readme.html",
 		"/D/Dropbox/www/laravel/laravel5/resources/views/user/profile/index.blade.php",
@@ -238,36 +267,7 @@
 		"/D/Dropbox/www/laravel/laravelx1/resources/assets/sass/app.scss",
 		"/home/victor92/Public/laravel/laravelx1/database/seeds/DatabaseSeeder.php",
 		"/home/victor92/Public/laravel/laravelx1/database/factories/ModelFactory.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/Composers/NavigationComposer.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/ArticleController.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/TestController.php",
-		"/home/victor92/Public/laravel/laravelx1/server.php",
-		"/home/victor92/.config/sublime-text-3/Packages/User/Plain text.sublime-settings",
-		"/home/victor92/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
-		"/home/victor92/Public/laravel/laravelx1/app/Providers/ViewComposerServiceProvider.php",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/article.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/form.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Article.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Providers/RouteServiceProvider.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/routes.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Tag.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/TagsController.php",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/create.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Repositories/TestRepository.php",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/layouts/main.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/config/app.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Providers/AppServiceProvider.php",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/layouts/navigation.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/home.blade.php",
-		"/home/victor92/Dropbox/diverse/setup/tinker",
-		"/home/victor92/Dropbox/diverse/setup/sqlite",
-		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
-		"/home/victor92/Public/laravel/laravelx1/database/migrations/2015_11_25_205855_create_tags_table.php",
-		"/home/victor92/Public/laravel/laravelx1/vendor/laracasts/flash/src/views/message.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/partials/flash.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
-		"/home/victor92/Public/laravel/laravelx1/vendor/symfony/console/Helper/HelperInterface.php",
-		"/home/victor92/Public/laravel/laravelx1/vendor/illuminate/html/helpers.php"
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Composers/NavigationComposer.php"
 	],
 	"find":
 	{

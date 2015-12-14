@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Tweet;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -14,9 +15,22 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        $search = '';   
+        if($search = $request->input('search'))
+        { 
+            $tweets = Tweet::where('title', "LIKE", "%" . $search . "%")->orWhere('body', "LIKE", "%" . $search . "%")->paginate(10); 
+
+        } 
+        else 
+        { 
+            $tweets = Tweet::simplePaginate(5);//Tweet::all()
+        }
+        $users = User::all();
+        $tags = ['foo', 'bar'];
+        $latests = Tweet::take(5)->get();
+        return view('home', compact('tweets', 'search', 'users', 'tags', 'latests'));
     }
 
     /**

@@ -1,8 +1,11 @@
-@extends('layouts.main')
+@extends('layout')
+
 @section('content')
-	<div class="page-header">
+    <div class="page-header">
         <h1>Tweets</h1>
     </div>
+
+
     <div class="row">
         <div class="col-md-12">
             <form action="{{ route('tweets.index')}}" method="GET"> 
@@ -19,6 +22,7 @@
                         <th>TITLE</th>
                         <th>BODY</th>
                         <th>USER_ID</th>
+                        <th>Image</th>
                         <th class="text-right">OPTIONS</th>
                     </tr>
                 </thead>
@@ -30,6 +34,7 @@
                     <td>{{$tweet->id}}</td>
                     <td>{{$tweet->title}}</td>
                     <td>{{$tweet->body}}</td>
+                    <td>{{$tweet->user_id}}</td>
                     @if($tweet->image_name)
                         <td><img src="/img/tweet/{{ $tweet->image_name }}" alt="{{ $tweet->image_name }}" class="img-responsive"></td>
                     @else
@@ -41,7 +46,9 @@
                         <form action="{{ route('tweets.destroy', $tweet->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Delete? Are you sure?')) { return true } else {return false };"><input type="hidden" name="_method" value="DELETE"><input type="hidden" name="_token" value="{{ csrf_token() }}"> <button class="btn btn-danger" type="submit">Delete</button></form>
                     </td>
                 </tr>
+
                 @endforeach
+
                 </tbody>
             </table>
             <hr> 
@@ -50,36 +57,6 @@
             <a class="btn btn-success" href="{{ route('tweets.create') }}">Create</a>
         </div>
     </div>
-    <aside class="col-md-4 blog-aside">
-        <div class="aside-widget">
-            <header>Read next...</header>
-            <div class="body clearfix">
-                <ul class="tags">
-                    @foreach ($latests as $latest)
-                        </li><a class="btn btn-primary" href="{{ route('tweets.show', $latest->id) }}">{{ $latest->title }}</a></li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
-        <div class="aside-widget">
-            <header>Users</header>
-            <div class="body clearfix">
-                <ul class="tags">
-                    @foreach ($users as $user)
-                        </li><a href="/users/{{ $user->id }}">{{ $user->name }}</a></li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
-        <div class="aside-widget">
-            <header>Tags</header>
-            <div class="body clearfix">
-                <ul class="tags">
-                    @foreach ($tags as $tag)
-                        </li><a href="/?tags={{ $tag }}">{{ $tag }}</a></li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
-    </aside>
+
+
 @endsection
